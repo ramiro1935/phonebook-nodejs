@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan')
+const cors = require('cors')
 const app = express();
 const PORT = process.env.PORT || 3001;
 let persons = [
@@ -30,7 +31,7 @@ const randomId = () => {
 };
 
 app.use(express.json());
-
+app.use(cors())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :body'))
 
 
