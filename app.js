@@ -30,6 +30,8 @@ const randomId = () => {
 	return Math.floor(Math.random() * 100000);
 };
 
+app.use(express.static('build'))
+
 app.use(express.json());
 app.use(cors())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :body'))
