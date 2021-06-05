@@ -8,7 +8,7 @@ GET http://localhost:3001/api/persons/1 HTTP/1.1
 
 ###
 
-DELETE http://localhost:3001/api/persons/1 HTTP/1.1
+DELETE http://localhost:3001/api/persons/60ba96f148d40ad310473ca0 HTTP/1.1
 
 ###
 
@@ -16,8 +16,8 @@ POST http://localhost:3001/api/persons/ HTTP/1.1
 content-type: application/json
 
 {
-    "name": "Leandro Arivilca",
-    "number": "914163253"
+    "name": "Lean2",
+    "number": "123456789"
 }
 
 ###
